@@ -1,105 +1,56 @@
-/* General reset to remove default padding and margin */ 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Style the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #f8f9fa;
     padding: 20px;
-    text-align: center;
+    text-align: left; /* Changed from center to left */
 }
 
-/* Style for the main heading */
 h1 {
-    font-size: 36px;
-    color: #444;
-    margin-bottom: 10px;
+    font-size: 2em;
+    color: #333;
 }
 
-/* Sub-heading style */
 h3 {
-    font-size: 24px;
-    color: #666;
+    color: #555;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-/* Style the button */
-button#button {
-    background-color: #28a745;
-    color: white;
-    border: none;
+#button {
+    background-color: #d0d4ff;
+    color: #000;
+    font-size: 1em;
     padding: 10px 20px;
-    font-size: 16px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px;
-    transition: background-color 0.3s ease;
 }
 
-button#button:hover {
-    background-color: #218838;
+#button:hover {
+    background-color: #c0c5ff;
 }
 
-/* Label and output styles */
-label {
-    font-size: 18px;
-    margin-right: 5px;
-}
-
-output#cols {
-    font-size: 18px;
-    color: #007bff;
-    margin-left: 5px;
-    font-weight: bold;
-}
-
-/* Style for the table */
 table {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
     border-collapse: collapse;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-}
-
 td {
-    padding: 10px;
-    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    background-color: #f5e6c8;
     text-align: center;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin: 5px;
+    display: inline-block;
+    line-height: 40px;
+    color: #000;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Media query for responsive design */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    button#button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    table, td {
-        font-size: 16px;
-    }
+output {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
 }
