@@ -1,0 +1,105 @@
+/* General reset to remove default padding and margin */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the main heading */
+h1 {
+    font-size: 36px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Sub-heading style */
+h3 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style the button */
+button#button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button#button:hover {
+    background-color: #218838;
+}
+
+/* Label and output styles */
+label {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+output#cols {
+    font-size: 18px;
+    color: #007bff;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Style for the table */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    button#button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    table, td {
+        font-size: 16px;
+    }
+}
